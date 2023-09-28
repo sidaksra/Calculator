@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Calculator</h1>
+  <div class="calculator">
+      
+      <input type="text" id="display" value="0" />
+
+      <div class="cal-frame">
+        <div>
+          <button class="highlight" onclick="appendToDisplay('(')">(</button>
+          <button onclick="appendToDisplay('7')">7</button>
+          <button onclick="appendToDisplay('4')">4</button>
+          <button onclick="appendToDisplay('1')">1</button>
+          <button onclick="appendToDisplay('0')">0</button>
+        </div>
+        <div>
+          <button class="highlight" onclick="appendToDisplay(')')">)</button>
+          <button onclick="appendToDisplay('8')">8</button>
+          <button onclick="appendToDisplay('5')">5</button>
+          <button onclick="appendToDisplay('2')">2</button>
+          <button onclick="appendToDisplay('.')">.</button>
+        </div>
+        <div>
+          <button class="highlight" onclick="mathToDisplay(' % ')">%</button>
+          <button onclick="appendToDisplay('9')">9</button>
+          <button onclick="appendToDisplay('6')">6</button>
+          <button onclick="appendToDisplay('3')">3</button>
+          <button type="submit" onclick="calculate()" class="equal">=</button>
+        </div>
+        <div>
+          <button onclick="backspace()" ondblclick="clearCal()">CE/<span class="ac">AC</span></button>
+          <button onclick="mathToDisplay(' / ')">÷</button>
+          <button onclick="mathToDisplay(' * ')">x</button>
+          <button onclick="mathToDisplay(' - ')">-</button>
+          <button onclick="mathToDisplay(' + ')">+</button>
+        </div>
+      </div>
+      <div>
+        <button class="historybtn" onclick="history()">History</button>
+        <div id="showHistory"></div>
+      </div>
+  </div>
+  <div class="instructions">
+    <h2>Instructions</h2>
+    <ol>
+      <li>
+        Click the numbers to add them up in your calculator.</li><br/>
+      </li>
+      <li>
+        Double click on AC to clear display.</li><br/>
+      </li>
+      <li>
+        Single click on CE to clear entry.</li><br/>
+      </li>
+    </ol>
+  </div>
+</body>
+<script src="main.js" ></script>
+</html>
