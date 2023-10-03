@@ -4,6 +4,8 @@ function clearCal(){
   
 }
 
+
+
 function appendToDisplay(text){
     const display=document.getElementById("display");
     if (display.value=="0"){

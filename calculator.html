@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
   <title>Calculator</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -35,7 +35,7 @@
           <button type="submit" onclick="calculate()" class="equal">=</button>
         </div>
         <div>
-          <button onclick="backspace()" ondblclick="clearCal()">CE/<span class="ac">AC</span></button>
+          <button id="clickEnable" onclick="backspace()" ondblclick="clearCal()">CE/<span class="ac">AC</span></button>
           <button onclick="mathToDisplay(' / ')">÷</button>
           <button onclick="mathToDisplay(' * ')">x</button>
           <button onclick="mathToDisplay(' - ')">-</button>

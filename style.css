@@ -1,8 +1,7 @@
 *{
     margin:0%;
-    padding:0%;
+    padding:0%;   
 }
-
 body{
     padding: 25px;
     display: flex;
@@ -121,4 +120,11 @@ button:hover {
     text-transform: uppercase;
     color: #0052bd;
     margin-bottom: 3%;
+}
+
+
+@media screen and (max-width:540px) {
+    .calculator{
+        width: 95%;
+    }
 }
